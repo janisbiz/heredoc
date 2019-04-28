@@ -14,7 +14,7 @@ A helper for outputting values to PHP heredoc
 ## Getting started
 
 These instructions will help you set up this helper, so you can use it. As well, there are provided 
-instructions to run integration tests for the extension.
+instructions to run tests for the extension.
 
 ## Using extension
 
