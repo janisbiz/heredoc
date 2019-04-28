@@ -1,0 +1,9 @@
+# Misc
+/.idea
+
+# Composer
+/vendor
+/composer.lock
+
+# Docker
+.env

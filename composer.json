@@ -1,0 +1,43 @@
+{
+  "name": "janisbiz/heredoc",
+  "description": "A helper for outputting values to PHP heredoc",
+  "keywords": [
+    "janisbiz",
+    "php",
+    "heredoc"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Janis Bizkovskis"
+    }
+  ],
+  "require": {
+    "php": ">=5.6"
+  },
+  "require-dev": {
+    "jakub-onderka/php-parallel-lint": "^1.0",
+    "phpmd/phpmd": "^2.6",
+    "phpro/grumphp": "^0.14.3",
+    "phpunit/phpunit": "^5.7",
+    "squizlabs/php_codesniffer": "^3.4",
+    "wimg/php-compatibility": "^9.1"
+  },
+  "autoload": {
+    "files": [
+      "function/heredoc.php"
+    ],
+    "psr-4": {
+      "Janisbiz\\Heredoc\\": "src/",
+      "Janisbiz\\Heredoc\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": "\"./vendor/bin/phpcs\" --config-set installed_paths vendor/wimg/php-compatibility",
+    "post-update-cmd" : "\"./vendor/bin/phpcs\" --config-set installed_paths vendor/wimg/php-compatibility"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
