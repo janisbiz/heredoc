@@ -6,4 +6,4 @@
 /composer.lock
 
 # Docker
-.env
+/.env
