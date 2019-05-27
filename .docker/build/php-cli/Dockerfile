@@ -7,6 +7,13 @@ RUN curl -o /tmp/composer-setup.php https://getcomposer.org/installer \
 
 # Install Composer
 RUN php /tmp/composer-setup.php --no-ansi --install-dir=/usr/local/bin --filename=composer --snapshot && rm -rf /tmp/composer-setup.php
+RUN composer global require hirak/prestissimo
+
+RUN apk add --no-cache $PHPIZE_DEPS \
+    && pecl install xdebug-2.5.0 \
+    && docker-php-ext-enable xdebug
+
+RUN printf '[php]\ndate.timezone = "UTC"\n' > /usr/local/etc/php/conf.d/tzone.ini
 
 WORKDIR "/var/www"
 
