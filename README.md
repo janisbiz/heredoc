@@ -1,11 +1,12 @@
 # Heredoc
 
 [![Latest Stable Version](https://poser.pugx.org/janisbiz/heredoc/v/stable)](https://packagist.org/packages/janisbiz/heredoc)
-[![Build Status](https://travis-ci.com/janisbiz/heredoc.svg?branch=master)](https://travis-ci.com/janisbiz/heredoc)
+[![codecov](https://codecov.io/gh/janisbiz/heredoc/branch/master/graph/badge.svg)](https://codecov.io/gh/janisbiz/heredoc)
+[![Build Status](https://travis-ci.com/janisbiz/heredoc.svg?branch=php5.x)](https://travis-ci.com/janisbiz/heredoc)
 [![Total Downloads](https://poser.pugx.org/janisbiz/heredoc/downloads)](https://packagist.org/packages/janisbiz/heredoc)
 ![Deps](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
 
-A helper for outputting values to PHP heredoc=
+A helper for outputting values to PHP heredoc
 
 ## Installing
 
