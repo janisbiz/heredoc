@@ -9,7 +9,7 @@ class Heredoc
      *
      * @return int|string|null|float|double
      */
-    public static function heredoc($value)
+    public static function heredoc(mixed $value): mixed
     {
         return $value;
     }

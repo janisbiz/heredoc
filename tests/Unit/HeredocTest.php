@@ -3,6 +3,7 @@
 namespace Janisbiz\Heredoc\Tests\Unit;
 
 use Janisbiz\Heredoc\HeredocTrait;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 
 class HeredocTest extends TestCase
@@ -10,11 +11,10 @@ class HeredocTest extends TestCase
     use HeredocTrait;
 
     /**
-     * @dataProvider heredocDataProvider
-     *
      * @param int|string|null|float|double $value
      * @param string $expected
      */
+    #[DataProvider('heredocDataProvider')]
     public function testHeredoc($value, $expected)
     {
         $this->assertSame(
@@ -25,7 +25,7 @@ VALUE
         );
     }
 
-    public function heredocDataProvider()
+    public static function heredocDataProvider()
     {
         return [
             [

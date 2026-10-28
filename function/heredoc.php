@@ -8,7 +8,7 @@ if (!function_exists('heredoc')) {
      *
      * @return null|float|int|string
      */
-    function heredoc($value)
+    function heredoc(mixed $value): mixed
     {
         return Heredoc::heredoc($value);
     }

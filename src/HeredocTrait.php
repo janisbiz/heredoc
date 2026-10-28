@@ -9,7 +9,7 @@ trait HeredocTrait
      *
      * @return int|string|null|float|double
      */
-    public function heredoc($value)
+    public function heredoc(mixed $value): mixed
     {
         return Heredoc::heredoc($value);
     }

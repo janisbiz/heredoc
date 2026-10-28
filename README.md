@@ -32,6 +32,6 @@ There are two ways to run tests:
     - Execute `docker-compose exec php-cli composer install`
     - Execute `docker-compose exec php-cli vendor/bin/phpunit -c phpunit.xml`
 2) By using your local php and mysql database environment:
-    - Ensure, that your php version is `5.6+`
+    - Ensure, that your php version is `8.5+`
     - Execute `composer install`
     - Execute `vendor/bin/phpunit -c phpunit.xml`

@@ -10,3 +10,5 @@
 
 # Phpunit
 /var/phpunit
+/.phpunit.cache
+/.phpunit.result.cache

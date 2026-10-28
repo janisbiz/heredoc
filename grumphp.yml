@@ -13,10 +13,6 @@ parameters:
     failed: nopecat.txt
     succeeded: me-gusta.txt
   tasks:
-    behat:
-      config: ./behat.yml
-      format: ~
-      stop_on_failure: false
     composer:
       file: ./composer.json
       no_check_all: false
@@ -48,7 +44,6 @@ parameters:
       ignore_patterns: []
       sniffs: []
       triggered_by: ['php-cli']
-    phplint: ~
     phpmd:
       exclude:
         - 'vendor/'

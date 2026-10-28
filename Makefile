@@ -13,7 +13,7 @@ help:
 test: test-phpcs test-phpunit ## Run tests
 
 test-phpcs: ## Run PHPCS tests
-	@$(DOCKER_COMPOSE_EXEC_PHP) vendor/bin/phpcs -p ./src -p ./tests --standard=PHPCompatibility,PSR2 --runtime-set testVersion 5.6-
+	@$(DOCKER_COMPOSE_EXEC_PHP) vendor/bin/phpcs -p ./src -p ./tests --standard=PHPCompatibility,PSR2 --runtime-set testVersion 8.5-
 
 test-phpunit: ## Run PHPUNIT tests
 	@$(DOCKER_COMPOSE_EXEC_PHP) vendor/bin/phpunit -c phpunit.xml --coverage-html=var/phpunit/coverage
